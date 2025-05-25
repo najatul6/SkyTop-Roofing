@@ -1,4 +1,5 @@
 import ServicesList from "../../Components/Services/ServicesList"
+import WhyChooseUs from "../../Components/Services/WhyChooseUs"
 import HeroBanner from "../../Components/Shared/HeroBanner"
 
 const Services = () => {
@@ -10,6 +11,7 @@ const Services = () => {
         />
         <div className="space-y-24">
             <ServicesList/>
+            <WhyChooseUs/>
         </div>
     </div>
   )
