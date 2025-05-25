@@ -43,7 +43,7 @@ function AutoplayPlugin(slider) {
     if (mouseOver) return;
     timeout = setTimeout(() => {
       slider.next();
-    }, 3000); // autoplay delay in ms
+    }, 1500); 
   }
 
   slider.on("created", () => {
@@ -66,7 +66,7 @@ function AutoplayPlugin(slider) {
 const Testimonials = () => {
   const [sliderRef] = useKeenSlider(
     {
-    //   loop: true,
+      loop: true,
       mode: "snap",
       slides: {
         perView: 1,
@@ -81,7 +81,7 @@ const Testimonials = () => {
         },
       },
     },
-    [AutoplayPlugin] // <-- pass autoplay plugin here
+    [AutoplayPlugin] 
   );
 
   return (
