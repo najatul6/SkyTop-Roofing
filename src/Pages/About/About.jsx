@@ -5,6 +5,7 @@ import OurMission from "../../Components/About/OurMission"
 import ProjectGallery from "../../Components/About/ProjectGallery"
 import SustainabilityCommunity from "../../Components/About/SustainabilityCommunity"
 import TeamSection from "../../Components/About/TeamMember"
+import Timeline from "../../Components/About/Timeline"
 import HeroBanner from "../../Components/Shared/HeroBanner"
 
 const About = () => {
@@ -21,6 +22,7 @@ const About = () => {
             <FAQ/>
             <CertificationsAwards/>
             <SustainabilityCommunity/>
+            <Timeline/>
         </div>
     )
 }
