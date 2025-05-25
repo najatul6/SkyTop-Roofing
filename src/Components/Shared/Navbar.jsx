@@ -8,11 +8,11 @@ const Navbar = () => {
 
     const navLinkClass = ({ isActive }) =>
         isActive
-            ? "relative text-blue-600 font-semibold after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:bg-blue-600 after:rounded-full after:transition-all after:duration-300 after:w-full"
-            : "relative text-gray-700 hover:text-blue-600 after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:bg-blue-600 after:rounded-full after:transition-all after:duration-300 after:w-0 hover:after:w-full";
+            ? "relative text-blue-600 font-semibold after:absolute after:right-0 after:-bottom-1 after:h-[3px] after:bg-blue-600 after:rounded-full after:transition-all after:duration-300 after:w-full"
+            : "relative text-gray-700 hover:text-blue-600 after:absolute after:right-0 after:-bottom-1 after:h-[3px] after:bg-blue-600 after:rounded-full after:transition-all after:duration-300 after:w-0 hover:after:w-full";
 
     return (
-        <nav className="bg-white shadow-md sticky top-0 z-50">
+        <nav className="bg-white shadow-md sticky top-0 z-50 w-full">
             <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
                 <Logo />
 
@@ -21,13 +21,13 @@ const Navbar = () => {
                     <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.2s' }}>
                         <NavLink to="/" className={navLinkClass}>Home</NavLink>
                     </li>
-                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.4s' }}>
+                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.3s' }}>
                         <NavLink to="/about" className={navLinkClass}>About</NavLink>
                     </li>
-                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.6s' }}>
+                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.4s' }}>
                         <NavLink to="/services" className={navLinkClass}>Services</NavLink>
                     </li>
-                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.8s' }}>
+                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.5s' }}>
                         <NavLink to="/contact" className={navLinkClass}>Contact</NavLink>
                     </li>
                 </ul>
