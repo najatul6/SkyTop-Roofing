@@ -3,6 +3,7 @@ import CompanyOverview from "../../Components/About/CompanyOverview"
 import FAQ from "../../Components/About/FAQ"
 import OurMission from "../../Components/About/OurMission"
 import ProjectGallery from "../../Components/About/ProjectGallery"
+import SustainabilityCommunity from "../../Components/About/SustainabilityCommunity"
 import TeamSection from "../../Components/About/TeamMember"
 import HeroBanner from "../../Components/Shared/HeroBanner"
 
@@ -19,6 +20,7 @@ const About = () => {
             <ProjectGallery/>
             <FAQ/>
             <CertificationsAwards/>
+            <SustainabilityCommunity/>
         </div>
     )
 }
