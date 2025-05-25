@@ -1,6 +1,6 @@
-Absolutely! Here's your **full README.md** file properly formatted with all content in one place and clean Markdown syntax. You can copy and paste this directly into your `README.md` file:
 
-````markdown
+
+
 # SkyTop Roofing Website
 
 A modern, responsive React website for **SkyTop Roofing** — a trusted local roofing company specializing in quality roofing services, repairs, and installations. Built using React, Tailwind CSS, and animated UI components to deliver a seamless user experience.
@@ -50,7 +50,7 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/najatul6/SkyTop-Roofing.git
    cd SkyTop-Roofing
-````
+
 
 2. Install the dependencies:
 
@@ -87,21 +87,16 @@ Follow these steps to set up the project locally:
    ```
 
 ---
-
-## Project Structure
-
+```bash
+src/
+├── assets/              # Images and static assets
+├── components/          # Reusable React components
+│   ├── About/           # Components specific to About page
+│   └── Shared/          # Shared components like HeroBanner, CTA, etc.
+├── pages/               # Main page components (Home, About, Services, Blog, Contact)
+├── Layout.jsx              # Main app component
+└── main.jsx             # ReactDOM entry point
 ```
-/src
-  /assets              # Images and static assets
-  /components          # Reusable React components
-    /About             # About page-specific components
-    /Shared            # Shared components like HeroBanner, CTA, etc.
-  /pages               # Main pages: Home, About, Services, Blog, Contact
-  App.jsx              # Main app component
-  main.jsx             # Entry point for ReactDOM rendering
-```
-
----
 
 ## Available Scripts
 
@@ -137,9 +132,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or support, contact:
 
-* Email: [support@skytoproofing.com](mailto:support@skytoproofing.com)
-* Phone: (123) 456-7890
-* Website: [https://www.skytoproofing.com](https://www.skytoproofing.com)
+* Email: [mdnajatulislam.develop@gmail.com
+](mailto:mdnajatulislam.develop@gmail.com)
+* Phone: +880 1773 827414
+* Website: [https://www.najatulislam.me](https://najatul-islam.vercel.app/)
 
 ---
 
