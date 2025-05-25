@@ -1,18 +1,18 @@
-import { Roofing, Tool, Feather } from "lucide-react";
+import { Home, HardHat, Wrench  } from "lucide-react";
 
 const services = [
   {
-    icon: <Roofing className="w-10 h-10 text-blue-600" />,
+    icon: <Home className="w-10 h-10 text-blue-600" />,
     title: "Roof Installation",
     description: "Expert installation with top-quality materials and craftsmanship.",
   },
   {
-    icon: <Tool className="w-10 h-10 text-blue-600" />,
+    icon: <HardHat className="w-10 h-10 text-blue-600" />,
     title: "Roof Repair",
     description: "Fast, reliable repairs to fix leaks, damage, and wear.",
   },
   {
-    icon: <Feather className="w-10 h-10 text-blue-600" />,
+    icon: <Wrench className="w-10 h-10 text-blue-600" />,
     title: "Roof Inspection",
     description: "Comprehensive inspection to keep your roof healthy and long-lasting.",
   },
