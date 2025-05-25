@@ -11,19 +11,21 @@ import HeroBanner from "../../Components/Shared/HeroBanner"
 const About = () => {
     return (
         <div>
-            <HeroBanner
-                title={" About SkyTop Roofing"}
-                subtitle={"Trusted local roofing experts with years of experience in keeping your home safe and secure."}
-            />
-            <CompanyOverview/>
-            <OurMission/>
-            <TeamSection/>
-            <ProjectGallery/>
-            <FAQ/>
-            <CertificationsAwards/>
-            <SustainabilityCommunity/>
-            <Timeline/>
-        </div>
+      <HeroBanner
+        title={" About SkyTop Roofing"}
+        subtitle={"Trusted local roofing experts with years of experience in keeping your home safe and secure."}
+      />
+      <div className="space-y-24">
+        <CompanyOverview />
+        <OurMission />
+        <TeamSection />
+        <ProjectGallery />
+        <FAQ />
+        <CertificationsAwards />
+        <SustainabilityCommunity />
+        <Timeline />
+      </div>
+    </div>
     )
 }
 
