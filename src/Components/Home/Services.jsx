@@ -42,7 +42,7 @@ import {
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 animate__animated animate__zoomIn"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
-                {service.icon}
+                <h1 className='w-full justify-center items-center flex'>{service.icon}</h1>
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
               </div>
