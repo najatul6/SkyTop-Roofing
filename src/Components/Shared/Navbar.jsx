@@ -21,11 +21,14 @@ const Navbar = () => {
                     <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.2s' }}>
                         <NavLink to="/" className={navLinkClass}>Home</NavLink>
                     </li>
-                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.3s' }}>
-                        <NavLink to="/about" className={navLinkClass}>About</NavLink>
-                    </li>
                     <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.4s' }}>
                         <NavLink to="/services" className={navLinkClass}>Services</NavLink>
+                    </li>
+                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.4s' }}>
+                        <NavLink to="/blog" className={navLinkClass}>Blog</NavLink>
+                    </li>
+                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.3s' }}>
+                        <NavLink to="/about" className={navLinkClass}>About</NavLink>
                     </li>
                     <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.5s' }}>
                         <NavLink to="/contact" className={navLinkClass}>Contact</NavLink>
@@ -57,11 +60,14 @@ const Navbar = () => {
                 <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.2s' }}>
                   <NavLink to="/" className={navLinkClass} onClick={() => setIsOpen(false)}>Home</NavLink>
                 </li>
-                <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.4s' }}>
-                  <NavLink to="/about" className={navLinkClass} onClick={() => setIsOpen(false)}>About</NavLink>
-                </li>
                 <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.6s' }}>
                   <NavLink to="/services" className={navLinkClass} onClick={() => setIsOpen(false)}>Services</NavLink>
+                </li>
+                <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.6s' }}>
+                  <NavLink to="/blog" className={navLinkClass} onClick={() => setIsOpen(false)}>Blog</NavLink>
+                </li>
+                <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.4s' }}>
+                  <NavLink to="/about" className={navLinkClass} onClick={() => setIsOpen(false)}>About</NavLink>
                 </li>
                 <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.8s' }}>
                   <NavLink to="/contact" className={navLinkClass} onClick={() => setIsOpen(false)}>Contact</NavLink>
