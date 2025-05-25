@@ -8,9 +8,9 @@ const Navbar = () => {
 
     const navLinkClass = ({ isActive }) =>
         isActive
-          ? "relative text-blue-600 font-semibold after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:bg-blue-600 after:rounded-full after:transition-all after:duration-300 after:w-full"
-          : "relative text-gray-700 hover:text-blue-600 after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:bg-blue-600 after:rounded-full after:transition-all after:duration-300 after:w-0 hover:after:w-full";
-      
+            ? "relative text-blue-600 font-semibold after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:bg-blue-600 after:rounded-full after:transition-all after:duration-300 after:w-full"
+            : "relative text-gray-700 hover:text-blue-600 after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:bg-blue-600 after:rounded-full after:transition-all after:duration-300 after:w-0 hover:after:w-full";
+
     return (
         <nav className="bg-white shadow-md sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -18,16 +18,16 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex space-x-6 text-base">
-                    <li>
+                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.2s' }}>
                         <NavLink to="/" className={navLinkClass}>Home</NavLink>
                     </li>
-                    <li>
+                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.4s' }}>
                         <NavLink to="/about" className={navLinkClass}>About</NavLink>
                     </li>
-                    <li>
+                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.6s' }}>
                         <NavLink to="/services" className={navLinkClass}>Services</NavLink>
                     </li>
-                    <li>
+                    <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.8s' }}>
                         <NavLink to="/contact" className={navLinkClass}>Contact</NavLink>
                     </li>
                 </ul>
@@ -54,20 +54,22 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {isOpen && (
                 <ul className="md:hidden px-4 pb-4 space-y-2 text-base">
-                    <li>
-                        <NavLink to="/" className={navLinkClass} onClick={() => setIsOpen(false)}>Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/about" className={navLinkClass} onClick={() => setIsOpen(false)}>About</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/services" className={navLinkClass} onClick={() => setIsOpen(false)}>Services</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contact" className={navLinkClass} onClick={() => setIsOpen(false)}>Contact</NavLink>
-                    </li>
-                </ul>
+                <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.2s' }}>
+                  <NavLink to="/" className={navLinkClass} onClick={() => setIsOpen(false)}>Home</NavLink>
+                </li>
+                <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.4s' }}>
+                  <NavLink to="/about" className={navLinkClass} onClick={() => setIsOpen(false)}>About</NavLink>
+                </li>
+                <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.6s' }}>
+                  <NavLink to="/services" className={navLinkClass} onClick={() => setIsOpen(false)}>Services</NavLink>
+                </li>
+                <li className="animate__animated animate__bounceInDown" style={{ animationDelay: '0.8s' }}>
+                  <NavLink to="/contact" className={navLinkClass} onClick={() => setIsOpen(false)}>Contact</NavLink>
+                </li>
+              </ul>
+              
             )}
+
         </nav>
     )
 }
