@@ -7,7 +7,7 @@ const Layout = () => {
             <Navbar/>
             <Outlet />
             <footer>
-                <div className="bg-neutral text-white p-5 text-center">
+                <div className="bg-gray-500 text-white p-5 text-center">
                     <p className="text-sm">
                         &copy; {new Date().getFullYear()} All Rights Reserved by Dream School
                     </p>
